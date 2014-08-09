@@ -101,7 +101,7 @@ define(function(require, exports, module) {
         var newOpacity = (OPACITY_SCALE - percentagePosition);
         var score = (newOpacity > 1) ? 10 : ((newOpacity < OPACITY_THRESHOLD) ? 1 : Math.floor((OPACITY_SCALE - percentagePosition) * 10) + 1);
 
-        if ( newOpacity < OPACITY_THRESHOLD )
+        if (newOpacity < OPACITY_THRESHOLD)
             newOpacity = OPACITY_THRESHOLD;
 
         position.set(currentPosition + data.delta);
